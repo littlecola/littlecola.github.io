@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>猜數字Game</title>
+    <style>
+    .inpTxt {
+        width: 20px;
+        float: left;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>猜數字Game</h2>
+    <h4>重新整理本頁可以重新產生數字！</h4>
+    <p>
+        <input type="text" class="inpTxt" maxlength=1>
+        <input type="text" class="inpTxt" maxlength=1>
+        <input type="text" class="inpTxt" maxlength=1>
+        <input type="text" class="inpTxt" maxlength=1>
+        <input type="button" value="開始猜" id="goBtn">
+        <p/>
+        <div>結果：
+            <p><span id="result"></span></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+        $(function() {
+            var numAmt = 4; //猜數字的數量
+            var yourNumber = [];
+            var randomNumber = [];
+            var $result = $('#result');
+            var outArr = [];
+
+            /* 自動抓亂數 */
+            var getRanNumArr = function() {
+                var arrPool = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+                    newArr = [];
+
+                for (var i = 0; i < numAmt; i++) {
+                    var rNum = getRan(arrPool.length),
+                        newNum = parseInt(arrPool.splice(rNum, 1), 10);
+                    newArr.push(newNum);
+                }
+
+                return newArr;
+            };
+
+            /* 抓輸入的數字 */
+            var getNumberArr = function() {
+                var newArr = [];
+
+                for (var i = 0; i < numAmt; i++) {
+                    var newNum = parseInt($('.inpTxt').eq(i).val());
+                    newArr.push(newNum);
+                }
+                return newArr;
+            };
+
+            var guessNum = function() {
+                var gPos = 0; //猜對位置統計
+                var gNum = 0; //猜對數字統計
+                var nyourArr = [];
+
+                /*陣列內多存一個flag判斷是否已被選*/
+                for (var i = 0; i < numAmt; i++) {
+                    nyourArr.push([yourNumber[i], 0]);
+                }
+
+                /*判斷位置*/
+                for (var j = 0; j < numAmt; j++) {
+                    if (nyourArr[j][0] == randomNumber[j]) {
+                        gPos += 1;
+                        nyourArr[j][1] = 1; //標記為1
+                    }
+                }
+
+                /*判斷數字*/
+                for (var k = 0; k < numAmt; k++) {
+                    for (var l = 0; l < numAmt; l++) {
+                        if ((nyourArr[k][0] == randomNumber[l]) && (nyourArr[k][1] !== 1)) {
+                            gNum += 1;
+                        }
+                    }
+                }
+
+                return [gPos, gNum];
+            };
+
+            /* 回傳0~9的整數*/
+            var getRan = function(int) {
+                return Math.floor(Math.random() * int);
+            };
+
+            /* 清除欄位*/
+            var clearIpt = function() {
+                for (var i = 0; i < numAmt; i++) {
+                    $('.inpTxt').eq(i).val('');
+                }
+            };
+
+            /* 初始化 */
+            var init = function() {
+                /* 產生亂數的不重複0~9數字*/
+                randomNumber = getRanNumArr();
+                var resultTxt = '';
+
+                /* 綁定開始'猜按鈕'*/
+                $('#goBtn').on('click', function() {
+                    var resArr = [];
+
+                    yourNumber = getNumberArr();
+                    resArr = guessNum();
+                    resultTxt = resArr[0] + 'A' + resArr[1] + 'B';
+                    // outArr.push('要猜的數字：' + randomNumber);
+                    outArr.push('您輸入的數字：' + yourNumber);
+                    outArr.push(resultTxt);
+                    if (resultTxt === '4A0B') {
+                        outArr.push('您猜對了！');
+                    }
+                    $result.html(outArr.join('<BR>'));
+                    clearIpt();
+                    guessNum();
+                });
+            };
+
+            init();
+
+        });
+        </script>
+</body>
+
+</html>
