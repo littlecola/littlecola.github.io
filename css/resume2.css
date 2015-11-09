@@ -2,6 +2,10 @@ body {
     padding-left: 20px;
 }
 
+ul li:hover ul {
+    display: block;
+}
+
 .jumbotron {
     border: solid 2pt white;
     border-radius: 10px;
@@ -26,12 +30,13 @@ h1 {
     font-size: 20pt;
 }
 
-.thumbnail {
-    float: left;
+.thumbnail img {
+    width: 100%;
 }
 
-.homework img {
-    size: 200x300;
+.course1 {
+    display: block;
+    margin: auto;
 }
 
 .homework p {
