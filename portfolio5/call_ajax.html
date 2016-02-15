@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02</title>
+</head>
+
+<body>
+    <div class="control-wrap">
+        <h2>按下 Get News 開始抓新聞</h2> 每頁:
+        <select name="" id="prePage">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+        </select>
+        筆, 目前第
+        <input id="currPage" type="text" value="1">頁
+        <button id="getNewsBtn">Get news</button>
+    </div>
+    <div class="content"></div>
+</body>
+<script src="../libs/jquery-1.10.2.min.js"></script>
+<script src="call_ajax.js"></script>
+
+</html>

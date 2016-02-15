@@ -1,165 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta:renderer></meta:renderer>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta:author></meta:author>
-    <meta name="keywords" content="Keyword 1,Keyword 2">
-    <meta name="description" content="description">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/resume2.css">
-    <title>Juno Wu's Place</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Juno Wu's Place</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar-content">
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Juno's</a>
-                <div class="collapse navbar-collapse" id="mynavbar-content">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#certificate">Certificate</a></li>
-                        <li><a href="#skill">Skills</a></li>
-                        <li><a href="#experience">Work Experience</a></li>
-                        <li class="dropdown">
-                            <a href="#homework" class="dropdown-toggle" data-toggle="dropdown">Homework<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#resume1">Resume 1</a></li>
-                                <li><a href="#burnedbread">Burned Bread</a></li>
-                                <li><a href="#lalabear">LaLa Bear</a></li>
-                                <li><a href="#bsp1">Bootstrap Practice 1</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#bsp2">Bootstrap Practice 2</a></li>
-                                <li><a href="#game">Guess numer game</a></li>
-                            </ul>
+                <a class="navbar-brand page-scroll" href="#page-top">Something about Juno</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#story">My Story</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To My Website!</div>
+                <div class="intro-heading">It's Nice To Meet You</div>
+                <a href="#introduce" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                    <h3 class="section-subheading text-muted">Love to Travel、Art、Old story and Culture</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Juno Wu</h4>
+                        <p class="text-muted">Major in Health and walfare、Visual communication, now is learning to be a F2E website designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:littlecola52@yahoo.com"><i class="fa fa-envelope-o"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/juno.wu.7"><i class="fa fa-facebook"></i></a>	
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">喜歡學習新事物。畢業後曾執行過大數據資料庫統計分析，也曾對高齡產業有所涉略，並有機會深入中國大陸醫院管理的市場，最近與視覺傳達設計為伍，在這數位化的海洋裡繼續前進。 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Skills</h2>
+                    <h3 class="section-subheading text-muted">The following is some skills I have learnt</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-2 col-sm-4">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-language fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Language</h4>
+                    <p class="text-muted">English、Manderin</p>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Statistics</h4>
+                    <p class="text-muted">SPSS, SAS</p>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Website Design</h4>
+                    <p class="text-muted">HTML5, CSS3, Bootstrap, RWD-Gird system Javascript, JQuery,</p>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Graphics / Image skills</h4>
+                    <p class="text-muted">Illustrator, Photo Shop</p>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Office</h4>
+                    <p class="text-muted">Word, Excel, PowerPoint</p>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Video Clip</h4>
+                    <p class="text-muted">After Effect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">My Website Practice and Design Works</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/rwd.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>RWD Practice</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/mobile ui.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>UI of mobile phone</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/photoselect.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Photo Select</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/productdesign.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Photograpic</h4>
+                        <p class="text-muted">Business Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/news-preview.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Get news</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ae.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dreams</h4>
+                        <p class="text-muted">Computer Animation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My story</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2002-2006</h4>
+                                    <h4 class="subheading">Bachelor of Public Health, Fu Jen Catholic University,Taiwan
+                                    </h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Internship in Public health center, Yonghe district, New Taipei City. Assist public health worker in community. Join a service club of Aboriginal for whole university life, starting my discover of world!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2007-2009</h4>
+                                    <h4 class="subheading">Master of Health and Welfare Policy, National Yang‐Ming University, Taiwan</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Relevant course in international Medicare: Long term care of Nordic, revolution of health and welfare policy. Oversea visit: China</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2009</h4>
+                                    <h4 class="subheading">Research Assistant, National Yang‐Ming University, Taiwan</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">In charge a project which was ‘Tobacco Control Policy Analysis and Monitor in Taiwan’.Assisted professor to do the project: secondary data survey with statistic ability, papers researching, building reports of the project.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Feb 2011</h4>
+                                    <h4 class="subheading">Stay in Australia</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Being a Fruit picker, Factory worker, Barista, Waitress. Studied in Impact language school. Internship of assistant in Nurse, working for elderly with dementia daily living.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>April 2013</h4>
+                                    <h4 class="subheading">Case management, Taipei Veteran General Hospital, Taiwan</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Internship in Public health center, Yonghe district, New Taipei City. Assist public health worker in community. Join a service club of Aboriginal for whole university life, starting my discover of world!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2014</h4>
+                                    <h4 class="subheading">International Medical Specialist, Taipei Medical University Hospital, Taiwan</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Assistant international patient in Hospital. Orgnaising Chinese hospital workers' training in the hospital. Hospital planning and management.Hospital building planning of China in Xiamen</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>October 2015-</h4>
+                                    <h4 class="subheading">Study in Visual communication, National Taiwan University of Art,Taiwan</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"></p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </nav>
-    <div id="jumbo" class="jumbotron">
-        <div id="about">
-            <h1>Welcome to my site!<small> I think you'll like it.</small></h1>
-            <p>Clinical Research Associate aiming to expand my experience and knowledge in the field of clinical research.My goal is to promote healthy clinical research by protecting the rights and welfare of the trial patients.
-                <h3>My skills including:</h3>
-                <ul>
-                    <li>Data analysis and statistics </li>
-                    <li>Work independently</li>
-                    <li>Information research skill</li>
-                    <li>Work effectively with people</li>
-                    <li>Experienced in administrative affairs</li>
-                    <li>Project management capabilities</li>
-                    <li>Communication skill</li>
-                    <li>Welling to learn</li>
-                </ul>
-            </p>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Juno's Website 2016</span>
+                </div>
+                <div class="col-md-4">
+  
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    <div class="about">
-        <h1 id="about">About</h1>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12 ">
-                <img src="img/education-icon.png" alt="oops!">
-                <h1 id="education">Education</h1>
-                <ul>
-                    <li>Master of Health and Welfare Policy, 2007-2009, National Yang-Ming University, Taiwan</li>
-                    <li>Bachelor of Public Health, 2002-2006, Fu Jen Catholic University, Taiwan</li>
-                    <li>Bachelor of Vison Communication, 2015-2017, National Taiwan art University, Taiwan</li>
-                </ul>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <img src="img/certificate-icon.png" alt="oops!">
-                <h1 id="certificate">Cetification</h1>
-                <ul>
-                    <li>Certificate III in Aged Care, Australia</li>
-                    <li>TOEIC (Green470-725 scores),Taiwan</li>
-                    <li>Cambridge First Certificate in English (FCE) has achieved Council of Europe Level B1, Australia</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <img src="img/skills-icon.png" alt="oops!">
-                <h1 id="skill">Skills</h1>
-                <ul>
-                    <li>Computer-Word, Excel, PowerPoint, Illustrator, Adobe Photoshop, Android, Windows XP, SPSS, SAS statistics software</li>
-                    <li>Working skills-Short cuts and after effects of the film,marketing research, survey and report making, questioner design, operating statistics software, sample analysis</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <img src="img/working-icon.png" alt="oops!">
-                <h1 id="skill">Work Experience</h1>
-                <ul>
-                    <li>Taipei Medical University Hospital, Taipei/<em>International Medical Specialist</em>,2014~2015</li>
-                    <li>Taipei Veteran General Hospital , Taipei/<em>Case Management</em>,2013~2014 </li>
-                    <li>National Yang-Ming University, Taipei/<em>Research Assistantt</em>,2010</li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Personal Website</h2>
+                            <p class="item-intro text-muted">This is my homework when I was training in NTU</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/rwd-preview.png" alt="">
+                            <p>This is my first personal website which be made when I was learning in NTU. My training including HTML5, CSS3 practice, using BootsTrap and RWD Grid-system. Forthemore, some of JavaScript exercise included. The content including my education detail and my homeworks.</p>
+                            <p>
+                                <strong>Want to see more?</strong>You can click the link!<a href="portfolio1/index.html">Juno's personal website practice 1</a></p>
+  
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div class="homework">
-        <h1 id="homework">Home Work</h1>
-        <div class="row">
-            <div class="col-md-2 col-sm-4 col-xs-6 course1">
-                <div id="resume1" class="thumbnail">
-                    <img src="img/resume-icon.png" alt="...">
-                    <a href="resume1/index.html">
-                        <p>Resume1</p>
-                    </a>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 course1">
-                <div id="burnedbread" class="thumbnail">
-                    <img src="img/bread.png" alt="...">
-                    <a href="burnedbread/index.html">
-                        <p>Burned Bread</p>
-                    </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>UI of mobile phone</h2>
+                            <p class="item-intro text-muted">Here are some UI of mobile phone design practices.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mobile ui-preview.png" alt="">
+                            <p>After finishing my course in NTU, I did some more practice at home, my brother who is a highly experienced f2e engineer gave me a lot of support to know how the f2e website design works in the real workplace</p>
+                            <p>UI of mobile phone-infomation page<a href="portfolio2-1/index.html">INFO</a>.</p>
+                            <p>UI of login page<a href="portfolio2-2/index.html">LOGIN</a>.</p>
+                            <p>UI of the list page<a href="portfolio2-3/index.html">LIST</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 course1">
-                <div id="lalabear" class="thumbnail">
-                    <img src="img/lala-icon.png" alt="...">
-                    <a href="lalabear/index.html">
-                        <p>LaLa Bear</p>
-                    </a>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 course1">
-                <div id="bsp1" class="thumbnail">
-                    <img src="img/bootstrap.png" alt="...">
-                    <a href="BootstrapExercise/index.html">
-                        <p>Bootstrap Exercise 1</p>
-                    </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Photo select</h2>
+                            <p class="item-intro text-muted">Using JavaScript to set timeout and change photos automatic.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/photoselcet-preview.png" alt="">
+                            <p>When you see a cute lady is smiling to you, you won't miss any chance to take a whole look! This page I use JavaScript to make the photos change every 2 seconds(It's too fast I know), and you can stop it by moving your mouse on it anytime. If you have any good impression on any of it, you can just click it, the photo change circle will stop for you till the next 2 seconds!</p>
+                            <p>You can play it at <a href="portfolio3/index.html">photo select</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 course1">
-                <div id="bsp2" class="thumbnail">
-                    <img src="img/bootstrap2.png" alt="...">
-                    <a href="bootstrap_excercise/index.html">
-                        <p>Bootstrap Exercise 2</p>
-                    </a>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 course1">
-                <div id="game" class="thumbnail">
-                    <img src="img/game.png" alt="...">
-                    <a href="game/index.html">
-                        <p>Guess number game</p>
-                    </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Buesiness Design</h2>
+                            <p class="item-intro text-muted">Some buesiness design works of the school.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/productdesign-preview.png" alt="">
+                            <p>Those design including package design make it for a real one. Here is also using the traditional Chinese culture elements to do the pattern design, produce culture creative products. Hopefully more and more of us know the ancient's knowledge and stories and using it, then proud of it!<</p>                           
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Get News</h2>
+                            <p class="item-intro text-muted">Get News by AJax_call skill</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/news-preview.png" alt="">
+                            <p>This is a very simple practice to learn hoe to get data bby using JQuery and AJax call.</p>
+                            <p>You can have it a try at <a href="portfolio5/call_ajax.html">Portfolio5</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Dreams</h2>
+                            <p class="item-intro text-muted">Short animation by using After effect skill</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/ae-preview.png" alt="">
+                            <p>Here is a very cute short animation film made by After Effect.This stiry is about the dreams of a cute dog, which is my final-term exam work of art school.</p>
+                            <p>You can take a look at <a href="https://www.youtube.com/watch?v=nZBUhR0wb24&feature=youtu.be">Doggy dreams</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
 </body>
+
+</html>
